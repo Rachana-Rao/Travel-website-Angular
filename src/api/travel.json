@@ -1,0 +1,75 @@
+[
+    {
+      "tourID": 1,
+      "img": "assets/images/paris.jpg",
+      "name": "Paris",
+      "location": "France",
+      "rating": 4.8,
+      "price": 45000
+    },
+    {
+      "tourID": 2,
+      "img": "assets/images/NYC.jpg",
+      "name": "New York",
+      "location": "USA",
+      "rating": 4.7,
+      "price": 20000
+    },
+    {
+      "tourID": 3,
+      "img": "assets/images/rome.jpg",
+      "name": "Rome",
+      "location": "Italy",
+      "rating": 4.9,
+      "price": 18000
+    },
+    {
+      "tourID": 4,
+      "img": "assets/images/london.jpg",
+      "name": "London",
+      "location": "UK",
+      "rating": 4.8,
+      "price": 17500
+    },
+    {
+      "tourID": 5,
+      "img": "assets/images/sydney.jpg",
+      "name": "Sydney",
+      "location": "Australia",
+      "rating": 4.6,
+      "price": 22000
+    },
+    {
+      "tourID": 6,
+      "img": "assets/images/tokyo.jpg",
+      "name": "Tokyo",
+      "location": "Japan",
+      "rating": 3.5,
+      "price": 19000
+    },
+    {
+      "tourID": 7,
+      "img": "assets/images/moscow.jpg",
+      "name": "Moscow",
+      "location": "Russia",
+      "rating": 4.7,
+      "price": 16000
+    },
+    {
+      "tourID": 8,
+      "img": "assets/images/barcelona.jpg",
+      "name": "Barcelona",
+      "location": "Spain",
+      "rating": 4.0,
+      "price": 17000
+    },
+    {
+      "tourID": 9,
+      "img": "assets/images/maldives.jpg",
+      "name": "Maldives",
+      "location": "Maldives",
+      "rating": 4.0,
+      "price": 30000
+    }
+  ]
+  

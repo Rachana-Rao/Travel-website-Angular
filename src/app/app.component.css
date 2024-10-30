@@ -1,0 +1,37 @@
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+    background-color: rgb(92, 92, 187); /* Change lightblue to blue */
+    
+}
+
+.nav-link {
+    margin-right: 15px;
+    color: rgb(219, 46, 46); /* To ensure the links are visible on a blue background */
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 24px;
+    color:black; /* To ensure the brand text is visible on a blue background */
+}
+
+  
+  /* Card styles */
+  .card {
+    margin-bottom: 20px;
+    padding-left: 3cm;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .active{
+    border-bottom: 2px solid yellow;
+  }

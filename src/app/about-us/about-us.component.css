@@ -1,0 +1,75 @@
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-content {
+  width: 55%;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff1100;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.view-our-work-btn {
+  background-color: #ff1100;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-our-work-btn:hover {
+  background-color: #0056b3;
+}
+
+.what-we-do {
+  width: 40%;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff1100;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-item i {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #ff1100;
+}
+
+.service-item h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.service-item p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}

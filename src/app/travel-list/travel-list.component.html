@@ -1,0 +1,53 @@
+ 
+<section class="popular-tours py-5">
+  <div class="container">
+      <div class="mb-4">
+          <input type="text" class="form-control" placeholder="Search for destinations" [(ngModel)]="searchTerm" (input)="filteredDestinations" />
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Popular Tours</h2>
+          <a href="#" class="text-decoration-none text-danger">View All Popular Tours →</a>
+      </div>
+
+      <div class="row">
+          
+          <div class="col-md-4" *ngFor="let destination of filteredDestinations">
+              <div class="card tour-card shadow-sm border-0 mb-4">
+                  
+                  <img [src]="destination.img" alt="{{ destination.name }}" class="card-img-top tour-img">
+                  <div class="card-body p-4">
+                      
+                      <h5 class="card-title text-primary">{{ destination.name }}</h5>
+                      
+                      <p class="card-text text-muted mb-2">
+                          <i class="bi bi-geo-alt-fill me-1"></i> {{ destination.location }} <br> 
+                          
+                          <app-city-rating [rating]="destination.rating" (ratingClicked)="onRatingClicked($event)">
+                            </app-city-rating>
+
+                          <span class="fw-bold text-success">Price: {{ destination.price | currency:'INR'}}</span>
+                      </p>
+                      
+                      
+                      
+                      <p class="card-text description text-secondary">
+                          Discover the charm of {{ destination.location }} with this amazing tour package. Perfect for adventure lovers and culture enthusiasts!
+                      </p>
+                      <button class="btn btn-outline-primary w-100" [routerLink]="['/travel-details', destination.tourID]">Book Now</button>
+
+                 
+                      
+
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+ 
+

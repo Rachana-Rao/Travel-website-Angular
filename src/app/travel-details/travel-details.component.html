@@ -1,0 +1,45 @@
+<!-- <div class="container">
+    <h4>This is the booking id {{ travel?.tourID }}</h4>
+    <h4>This is the name of the city  {{ travel?.name}}</h4>
+    <h4>This is the name of the country {{ travel?.location }}</h4>
+    <h4>This is the total price{{ travel?.price }}</h4>
+    <h4>This is the total rating {{ travel?.rating }}</h4>
+    <button class="btn btn-info" (click)="onBack()"> Go Back</button>
+</div> -->
+
+
+<!-- <div class="container">
+    <h4>The name of the place is {{ travel?.name}}.
+    <h4>The Booking ID for this place is " {{ travel?.tourID }} ".
+
+    </h4> The place is located in {{ travel?.location }}.
+    <h4>The total rating for {{ travel?.name}} is {{ travel?.rating }}.</h4>
+        
+    <h4>To enjoy your journey just pay RS.{{ travel?.price }}</h4>
+    <br>
+ 
+   <button class="btn btn-outline-info"  
+    style="width: 80px;margin-left: 10px;" (click)="onEdit()">
+        Edit
+    </button>
+    <button class="btn btn-outline-danger"  style="width: 85px;margin-left: 10px">
+        Delete
+    </button>
+   
+    <br><br>
+ 
+    <button class="btn btn-info" (click)="onBack()"> Go Back</button> -->
+
+
+    <div *ngIf="travel">
+        <h3>The name of the place is {{ travel.name }}.</h3>
+        <p>The Booking ID for this place is "{{ travel.tourID }}".</p>
+        <p>The place is located in {{ travel.location }}.</p>
+        <p>The total rating for {{ travel.name }} is {{ travel.rating }}.</p>
+        <p>To enjoy your journey just pay {{ travel.price | currency:'INR' }}</p>
+      
+        <button class="btn btn-outline-info" (click)="onEdit()">Edit</button>
+        <button class="btn btn-outline-danger" (click)="onDelete()">Delete</button>
+        <button class="btn btn-info" (click)="onBack()">Go Back</button>
+      </div>
+      

@@ -1,0 +1,59 @@
+ <!-- <div class="card shadow md-3" style="width: 60%;align-self: center;margin: 20px;">
+    <div class="card card-header" style="background-color: maroon;">
+    <span style="color: antiquewhite;">Edit the Movie</span>
+</div>
+    <div class="card-body">
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" >Travel Name</span>
+                  </div>
+                        <input class="form-control" type="text" id="name" name=name [(ngModel)]="travel.name">
+                </div>
+                
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >Travel Rating</span>
+              </div>
+                    <input class="form-control" type="text" id="rating" name=rating [(ngModel)]="travel.rating">
+            </div>
+            
+            <br>
+            <button name="save" type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+
+        </form>
+    </div> -->
+
+    <div class="card shadow md-3" style="width: 60%; align-self: center; margin: 20px;">
+      <div class="card-header" style="background-color: maroon;">
+          <span style="color: antiquewhite;">Edit Travel Destination</span>
+      </div>
+      <div class="card-body">
+          <form>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">Travel Name</span>
+                  </div>
+                  <input class="form-control" type="text" id="name" name="name" [(ngModel)]="travel.name">
+              </div>
+                  
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">Travel Rating</span>
+                  </div>
+                  <input class="form-control" type="number" id="rating" name="rating" [(ngModel)]="travel.rating">
+              </div>
+  
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">Price</span>
+                  </div>
+                  <input class="form-control" type="number" id="price" name="price" [(ngModel)]="travel.price">
+              </div>
+  
+              <br>
+              <button name="save" type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+          </form>
+      </div>
+  </div>
+  

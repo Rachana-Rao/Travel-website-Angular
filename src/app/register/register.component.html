@@ -1,0 +1,121 @@
+<!-- <div class="card">
+    <div class="card-header heading" style="background-color: powderblue;">
+        Register - Reactive Form
+    </div>
+    <div class="card-body">
+        <form [formGroup]="RegForm" (ngSubmit)="onSave()">
+            
+            
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label" for="name">First Name</label>
+                <div class="col-md-8">
+                    <input type="text" id="name" formControlName="name" class="form-control"
+                           [ngClass]="{'is-invalid': name?.touched && !name?.valid}" />
+                    <div class="invalid-feedback">
+                        <span *ngIf="name?.errors?.['required']">Please enter your first name.</span>
+                        <span *ngIf="name?.errors?.['minlength']">The name must be at least 4 characters long.</span>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label" for="email">Email</label>
+                <div class="col-md-8">
+                    <input type="email" id="email" formControlName="email" class="form-control"
+                           [ngClass]="{'is-invalid': email?.touched && !email?.valid}" />
+                    <div class="invalid-feedback">
+                        <span *ngIf="email?.errors?.['required']">Please enter your email.</span>
+                        <span *ngIf="email?.errors?.['email']">Please enter a valid email address.</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label" for="city">City</label>
+                <div class="col-md-8">
+                    <input type="text" id="city" formControlName="city" class="form-control"
+                           [ngClass]="{'is-invalid': city?.touched && !city?.valid}" />
+                    <div class="invalid-feedback">
+                        <span *ngIf="city?.errors?.['required']">Please enter your city.</span>
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="form-group row mb-2">
+                <div class="offset-md-2 col-md-4">
+                    <button type="submit" class="btn btn-primary"
+                            [disabled]="!RegForm.valid">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>    
+</div> -->
+
+
+<div class="card">
+    <div class="card-header heading" style="background-color:powderblue">
+      Register - Reactive Form
+    </div>
+    <div class="card-body">
+      <form [formGroup]="RegForm" (ngSubmit)="onSave()">
+        
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label" for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            formControlName="name"
+            [ngClass]="{'is-invalid': (name?.touched || name?.dirty) && !name?.valid}"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="name?.errors?.['required']">Please enter your name.</span>
+            <span *ngIf="name?.errors?.['minlength']">Name must be at least 4 characters.</span>
+          </span>
+        </div>
+  
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label" for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            formControlName="email"
+            [ngClass]="{'is-invalid': (email?.touched || email?.dirty) && !email?.valid}"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="email?.errors?.['required']">Please enter your email.</span>
+            <span *ngIf="email?.errors?.['email']">Enter a valid email.</span>
+          </span>
+        </div> 
+  
+   
+
+        <!-- <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label" for="city">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            formControlName="city"
+            [ngClass]="{'is-invalid': (city?.touched || city?.dirty) && !city?.valid}"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="city?.errors?.['required']">Please enter your city.</span>
+          </span>
+        </div> -->
+  
+        <div class="form-group row mb-2">
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-primary" [disabled]="!RegForm.valid">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
